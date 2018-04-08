@@ -6,6 +6,7 @@ $(document).ready(function() {
     var itemTwo = $("#itemTwo").val();
     var itemThree = $("#itemThree").val();
     var arrayInputs = [itemOne, itemTwo, itemThree];
+    arrayInputs.sort();
     console.log(arrayInputs);
   });
 });
