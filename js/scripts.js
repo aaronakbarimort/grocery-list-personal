@@ -6,7 +6,11 @@ $(document).ready(function() {
     var itemTwo = $("#itemTwo").val();
     var itemThree = $("#itemThree").val();
     var arrayInputs = [itemOne, itemTwo, itemThree];
-    arrayInputs.sort();
-    console.log(arrayInputs);
+
+    var arraySorted = arrayInputs.sort();
+    // console.log(arraySorted);
+    arraySorted.forEach(function(arraySort) {
+      return $("#results").append("<li>" + arraySort + "</li>");
+    });
   });
 });
